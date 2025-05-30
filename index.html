@@ -8,7 +8,7 @@
 
   <h2>カウンター</h2>
   
-  <input type="number" id="numberField" value="0">
+  <input type="number" id="numberField" value="1">
   <button onclick="increment()">+1</button>
 
   <script>
@@ -18,7 +18,7 @@
 
       // 入力が数値でない場合は 0 にリセット
       if (isNaN(value)) {
-        value = 1;
+        value = 0;
       }
 
       field.value = value + 1;
