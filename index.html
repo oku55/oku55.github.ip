@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>カウンター</title>
+</head>
+<body>
+
+  <h2>カウンター</h2>
+  
+  <input type="number" id="numberField" value="0">
+  <button onclick="increment()">+1</button>
+
+  <script>
+    function increment() {
+      const field = document.getElementById("numberField");
+      let value = parseInt(field.value, 10);
+
+      // 入力が数値でない場合は 0 にリセット
+      if (isNaN(value)) {
+        value = 0;
+      }
+
+      field.value = value + 1;
+    }
+  </script>
+
+</body>
+</html>
